@@ -1,0 +1,188 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: '微软雅黑';
+}
+body {
+  line-height: 1;
+  background: #fff;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+em {
+  font-style: normal;
+}
+u {
+  text-decoration: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need ‘cellspacing=”0″‘ in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.valign {
+  text-align: center;
+}
+.valign img {
+  vertical-align: middle;
+}
+.valign::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.clear {
+  zoom: 1;
+}
+.clear::before {
+  content: '';
+  display: table;
+}
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 关闭百度地图的版权 */
+:deep(.anchorBL:not(.BMap_scaleCtrl)) {
+  display: none;
+}
+
+/*
+  滚动条整体样式
+*/
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /* 滚动条里面小方块 */
+  border-radius: 10px;
+  background-color: #d7d9dd;
+  background-image: -webkit-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent
+  );
+}
+.scrollbar::-webkit-scrollbar-track {
+  /* 滚动条里面轨道 */
+  box-shadow: inset 0 0 5px transparent;
+  background: transparent;
+  border-radius: 10px;
+}

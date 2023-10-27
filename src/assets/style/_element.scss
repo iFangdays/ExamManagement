@@ -1,0 +1,26 @@
+/* 以下是修改element-plus的主题色（不推荐使用sass变量修改，系统会卡） */
+:root {
+  --el-color-primary: #4BA0A3;
+}
+
+.el-table {
+  .el-table__header-wrapper {
+    thead {
+      tr {
+        height: 44px;
+        font-size: 16px;
+        color: #6e6e73;
+        > th {
+          background-color: #F5F6F9 !important;
+        }
+      }
+    }
+  }
+}
+.el-select-dropdown{
+  width: 100%!important;
+  li{
+    padding: 0 20px!important;
+  }
+}
+
